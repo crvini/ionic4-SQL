@@ -1,0 +1,43 @@
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+import { IonicNativePlugin, cordova } from '@ionic-native/core';
+import { Injectable } from '@angular/core';
+var SQLitePorter = /** @class */ (function (_super) {
+    __extends(SQLitePorter, _super);
+    function SQLitePorter() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    SQLitePorter.prototype.importSqlToDb = function (db, sql) { return cordova(this, "importSqlToDb", { "callbackStyle": "object", "successName": "successFn", "errorName": "errorFn" }, arguments); };
+    SQLitePorter.prototype.exportDbToSql = function (db) { return cordova(this, "exportDbToSql", { "callbackStyle": "object", "successName": "successFn", "errorName": "errorFn" }, arguments); };
+    SQLitePorter.prototype.importJsonToDb = function (db, json) { return cordova(this, "importJsonToDb", { "callbackStyle": "object", "successName": "successFn", "errorName": "errorFn" }, arguments); };
+    SQLitePorter.prototype.exportDbToJson = function (db) { return cordova(this, "exportDbToJson", { "callbackStyle": "object", "successName": "successFn", "errorName": "errorFn" }, arguments); };
+    SQLitePorter.prototype.wipeDb = function (db) { return cordova(this, "wipeDb", { "callbackStyle": "object", "successName": "successFn", "errorName": "errorFn" }, arguments); };
+    SQLitePorter.pluginName = "SQLitePorter";
+    SQLitePorter.plugin = "uk.co.workingedge.cordova.plugin.sqliteporter";
+    SQLitePorter.pluginRef = "cordova.plugins.sqlitePorter";
+    SQLitePorter.repo = "https://github.com/dpa99c/cordova-sqlite-porter";
+    SQLitePorter.platforms = ["Amazon Fire OS", "Android", "BlackBerry 10", "Browser", "iOS", "Tizen", "Windows", "Windows Phone"];
+    SQLitePorter = __decorate([
+        Injectable()
+    ], SQLitePorter);
+    return SQLitePorter;
+}(IonicNativePlugin));
+export { SQLitePorter };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi9zcmMvQGlvbmljLW5hdGl2ZS9wbHVnaW5zL3NxbGl0ZS1wb3J0ZXIvbmd4L2luZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxPQUFPLDhCQUFzQyxNQUFNLG9CQUFvQixDQUFDO0FBQ3hFLE9BQU8sRUFBRSxVQUFVLEVBQUUsTUFBTSxlQUFlLENBQUM7O0lBK0NULGdDQUFpQjs7OztJQWFqRCxvQ0FBYSxhQUFDLEVBQU8sRUFBRSxHQUFXO0lBY2xDLG9DQUFhLGFBQUMsRUFBTztJQWVyQixxQ0FBYyxhQUFDLEVBQU8sRUFBRSxJQUFTO0lBY2pDLHFDQUFjLGFBQUMsRUFBTztJQWN0Qiw2QkFBTSxhQUFDLEVBQU87Ozs7OztJQXRFSCxZQUFZO1FBRHhCLFVBQVUsRUFBRTtPQUNBLFlBQVk7dUJBaER6QjtFQWdEa0MsaUJBQWlCO1NBQXRDLFlBQVkiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBDb3Jkb3ZhLCBJb25pY05hdGl2ZVBsdWdpbiwgUGx1Z2luIH0gZnJvbSAnQGlvbmljLW5hdGl2ZS9jb3JlJztcbmltcG9ydCB7IEluamVjdGFibGUgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcblxuLyoqXG4gKiBAbmFtZSBTUUxpdGUgUG9ydGVyXG4gKiBAZGVzY3JpcHRpb25cbiAqIFRoaXMgQ29yZG92YS9QaG9uZWdhcCBwbHVnaW4gY2FuIGJlIHVzZWQgdG8gaW1wb3J0L2V4cG9ydCB0by9mcm9tIGEgU1FMaXRlIGRhdGFiYXNlIHVzaW5nIGVpdGhlciBTUUwgb3IgSlNPTi5cbiAqXG4gKiBAdXNhZ2VcbiAqIGBgYHR5cGVzY3JpcHRcbiAqIGltcG9ydCB7IFNRTGl0ZVBvcnRlciB9IGZyb20gJ0Bpb25pYy1uYXRpdmUvc3FsaXRlLXBvcnRlci9uZ3gnO1xuICpcbiAqXG4gKiBjb25zdHJ1Y3Rvcihwcml2YXRlIHNxbGl0ZVBvcnRlcjogU1FMaXRlUG9ydGVyKSB7IH1cbiAqXG4gKiAuLi5cbiAqXG4gKiBsZXQgZGIgPSB3aW5kb3cub3BlbkRhdGFiYXNlKCdUZXN0JywgJzEuMCcsICdUZXN0REInLCAxICogMTAyNCk7XG4gKiAvLyBvciB3ZSBjYW4gdXNlIFNRTGl0ZSBwbHVnaW5cbiAqIC8vIHdlIHdpbGwgYXNzdW1lIHRoYXQgd2UgaW5qZWN0ZWQgU1FMaXRlIGludG8gdGhpcyBjb21wb25lbnQgYXMgc3FsaXRlXG4gKiB0aGlzLnNxbGl0ZS5jcmVhdGUoe1xuICogICBuYW1lOiAnZGF0YS5kYicsXG4gKiAgIGxvY2F0aW9uOiAnZGVmYXVsdCdcbiAqIH0pXG4gKiAgIC50aGVuKChkYjogYW55KSA9PiB7XG4gKiAgICAgbGV0IGRiSW5zdGFuY2UgPSBkYi5fb2JqZWN0SW5zdGFuY2U7XG4gKiAgICAgLy8gd2UgY2FuIHBhc3MgZGIuX29iamVjdEluc3RhbmNlIGFzIHRoZSBkYXRhYmFzZSBvcHRpb24gaW4gYWxsIFNRTGl0ZVBvcnRlciBtZXRob2RzXG4gKiAgIH0pO1xuICpcbiAqXG4gKiBsZXQgc3FsID0gJ0NSRUFURSBUQUJMRSBBcnRpc3QgKFtJZF0gUFJJTUFSWSBLRVksIFtUaXRsZV0pOycgK1xuICogICAgICAgICAgICAnSU5TRVJUIElOVE8gQXJ0aXN0KElkLFRpdGxlKSBWQUxVRVMgKFwiMVwiLFwiRnJlZFwiKTsnO1xuICpcbiAqIHRoaXMuc3FsaXRlUG9ydGVyLmltcG9ydFNxbFRvRGIoZGIsIHNxbClcbiAqICAgLnRoZW4oKCkgPT4gY29uc29sZS5sb2coJ0ltcG9ydGVkJykpXG4gKiAgIC5jYXRjaChlID0+IGNvbnNvbGUuZXJyb3IoZSkpO1xuICpcbiAqXG4gKiBgYGBcbiAqL1xuQFBsdWdpbih7XG4gIHBsdWdpbk5hbWU6ICdTUUxpdGVQb3J0ZXInLFxuICBwbHVnaW46ICd1ay5jby53b3JraW5nZWRnZS5jb3Jkb3ZhLnBsdWdpbi5zcWxpdGVwb3J0ZXInLFxuICBwbHVnaW5SZWY6ICdjb3Jkb3ZhLnBsdWdpbnMuc3FsaXRlUG9ydGVyJyxcbiAgcmVwbzogJ2h0dHBzOi8vZ2l0aHViLmNvbS9kcGE5OWMvY29yZG92YS1zcWxpdGUtcG9ydGVyJyxcbiAgcGxhdGZvcm1zOiBbJ0FtYXpvbiBGaXJlIE9TJywgJ0FuZHJvaWQnLCAnQmxhY2tCZXJyeSAxMCcsICdCcm93c2VyJywgJ2lPUycsICdUaXplbicsICdXaW5kb3dzJywgJ1dpbmRvd3MgUGhvbmUnXVxufSlcbkBJbmplY3RhYmxlKClcbmV4cG9ydCBjbGFzcyBTUUxpdGVQb3J0ZXIgZXh0ZW5kcyBJb25pY05hdGl2ZVBsdWdpbiB7XG5cbiAgLyoqXG4gICAqIEV4ZWN1dGVzIGEgc2V0IG9mIFNRTCBzdGF0ZW1lbnRzIGFnYWluc3QgdGhlIGRlZmluZWQgZGF0YWJhc2UuIENhbiBiZSB1c2VkIHRvIGltcG9ydCBkYXRhIGRlZmluZWQgaW4gdGhlIFNRTCBzdGF0ZW1lbnRzIGludG8gdGhlIGRhdGFiYXNlLCBhbmQgbWF5IGFkZGl0aW9uYWxseSBpbmNsdWRlIGNvbW1hbmRzIHRvIGNyZWF0ZSB0aGUgdGFibGUgc3RydWN0dXJlLlxuICAgKiBAcGFyYW0gZGIge09iamVjdH0gRGF0YWJhc2Ugb2JqZWN0XG4gICAqIEBwYXJhbSBzcWwge3N0cmluZ30gU1FMIHN0YXRlbWVudHMgdG8gZXhlY3V0ZSBhZ2FpbnN0IHRoZSBkYXRhYmFzZVxuICAgKiBAcmV0dXJuIHtQcm9taXNlPGFueT59XG4gICAqL1xuICBAQ29yZG92YSh7XG4gICAgY2FsbGJhY2tTdHlsZTogJ29iamVjdCcsXG4gICAgc3VjY2Vzc05hbWU6ICdzdWNjZXNzRm4nLFxuICAgIGVycm9yTmFtZTogJ2Vycm9yRm4nXG4gIH0pXG4gIGltcG9ydFNxbFRvRGIoZGI6IGFueSwgc3FsOiBzdHJpbmcpOiBQcm9taXNlPGFueT4ge1xuICAgIHJldHVybjtcbiAgfVxuXG4gIC8qKlxuICAgKiBFeHBvcnRzIGEgU1FMaXRlIERCIGFzIGEgc2V0IG9mIFNRTCBzdGF0ZW1lbnRzLlxuICAgKiBAcGFyYW0gZGIge09iamVjdH0gRGF0YWJhc2Ugb2JqZWN0XG4gICAqIEByZXR1cm4ge1Byb21pc2U8YW55Pn1cbiAgICovXG4gIEBDb3Jkb3ZhKHtcbiAgICBjYWxsYmFja1N0eWxlOiAnb2JqZWN0JyxcbiAgICBzdWNjZXNzTmFtZTogJ3N1Y2Nlc3NGbicsXG4gICAgZXJyb3JOYW1lOiAnZXJyb3JGbidcbiAgfSlcbiAgZXhwb3J0RGJUb1NxbChkYjogYW55KTogUHJvbWlzZTxhbnk+IHtcbiAgICByZXR1cm47XG4gIH1cblxuICAvKipcbiAgICogQ29udmVydHMgdGFibGUgc3RydWN0dXJlIGFuZC9vciByb3cgZGF0YSBjb250YWluZWQgd2l0aGluIGEgSlNPTiBzdHJ1Y3R1cmUgaW50byBTUUwgc3RhdGVtZW50cyB0aGF0IGNhbiBiZSBleGVjdXRlZCBhZ2FpbnN0IGEgU1FMaXRlIGRhdGFiYXNlLiBDYW4gYmUgdXNlZCB0byBpbXBvcnQgZGF0YSBpbnRvIHRoZSBkYXRhYmFzZSBhbmQvb3IgY3JlYXRlIHRoZSB0YWJsZSBzdHJ1Y3R1cmUuXG4gICAqIEBwYXJhbSBkYiB7T2JqZWN0fSBEYXRhYmFzZSBvYmplY3RcbiAgICogQHBhcmFtIGpzb24ge09iamVjdHxzdHJpbmd9IEpTT04gc3RydWN0dXJlIGNvbnRhaW5pbmcgcm93IGRhdGEgYW5kL29yIHRhYmxlIHN0cnVjdHVyZSBhcyBlaXRoZXIgYSBKU09OIG9iamVjdCBvciBzdHJpbmdcbiAgICogQHJldHVybiB7UHJvbWlzZTxhbnk+fVxuICAgKi9cbiAgQENvcmRvdmEoe1xuICAgIGNhbGxiYWNrU3R5bGU6ICdvYmplY3QnLFxuICAgIHN1Y2Nlc3NOYW1lOiAnc3VjY2Vzc0ZuJyxcbiAgICBlcnJvck5hbWU6ICdlcnJvckZuJ1xuICB9KVxuICBpbXBvcnRKc29uVG9EYihkYjogYW55LCBqc29uOiBhbnkpOiBQcm9taXNlPGFueT4ge1xuICAgIHJldHVybjtcbiAgfVxuXG4gIC8qKlxuICAgKiBFeHBvcnRzIGEgU1FMaXRlIERCIGFzIGEgSlNPTiBzdHJ1Y3R1cmVcbiAgICogQHBhcmFtIGRiIHtPYmplY3R9IERhdGFiYXNlIG9iamVjdFxuICAgKiBAcmV0dXJuIHtQcm9taXNlPGFueT59XG4gICAqL1xuICBAQ29yZG92YSh7XG4gICAgY2FsbGJhY2tTdHlsZTogJ29iamVjdCcsXG4gICAgc3VjY2Vzc05hbWU6ICdzdWNjZXNzRm4nLFxuICAgIGVycm9yTmFtZTogJ2Vycm9yRm4nXG4gIH0pXG4gIGV4cG9ydERiVG9Kc29uKGRiOiBhbnkpOiBQcm9taXNlPGFueT4ge1xuICAgIHJldHVybjtcbiAgfVxuXG4gIC8qKlxuICAgKiBXaXBlcyBhbGwgZGF0YSBmcm9tIGEgZGF0YWJhc2UgYnkgZHJvcHBpbmcgYWxsIGV4aXN0aW5nIHRhYmxlc1xuICAgKiBAcGFyYW0gZGIge09iamVjdH0gRGF0YWJhc2Ugb2JqZWN0XG4gICAqIEByZXR1cm4ge1Byb21pc2U8YW55Pn1cbiAgICovXG4gIEBDb3Jkb3ZhKHtcbiAgICBjYWxsYmFja1N0eWxlOiAnb2JqZWN0JyxcbiAgICBzdWNjZXNzTmFtZTogJ3N1Y2Nlc3NGbicsXG4gICAgZXJyb3JOYW1lOiAnZXJyb3JGbidcbiAgfSlcbiAgd2lwZURiKGRiOiBhbnkpOiBQcm9taXNlPGFueT4ge1xuICAgIHJldHVybjtcbiAgfVxuXG59XG4iXX0=
